@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa, .tablaPuntos{
+    min-width: 450px;
+}
+
+.perder{
+    display: none;
+}
+
+.mapa{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.tablaPuntos{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.flex{
+    min-width: 100px;
+    display: flex;
+
+}
+
+.button{
+    color: #fff;
+    background-color: #56f;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cuadrado{
+    aspect-ratio: 1;
+}
+
+.cuadradoSerpiente{
+    background-color: #b93;
+}
+
+.cuadradoVacio{
+    background-color: #56f;
+}
+
+.cuadradoComida{
+    background-color: #d34;
+}
